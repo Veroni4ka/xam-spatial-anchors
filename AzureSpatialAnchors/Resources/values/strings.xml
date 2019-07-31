@@ -1,0 +1,10 @@
+<resources>
+    <string name="main_title_text">Azure Spatial Anchors for Xamarin.Android</string>
+    <string name="create_anchor_button_text">Create</string>
+    <string name="locate_anchor_button_text">Locate</string>
+    <string name="main_shared_details_text">Create and locate anchors between multiple devices.</string>
+    <string name="shared_enter_anchor_text">Enter Anchor Number:</string>
+    <string name="shared_anchor_number_text">Anchor Number</string>
+    <string name="back_button_text">Back</string>
+  <string name="shared_title_text">Welcome to the Azure Spatial Anchors Shared Anchors Demo</string>
+</resources>
