@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:showIn="@layout/activity_main"
-    tools:context=".AzureSpatialAnchorsCreateActivity">
+    tools:showIn="@layout/activity_main">
 
     <fragment android:name="com.google.ar.sceneform.ux.ArFragment"
-        android:id="@+id/ux_fragment"
+        android:id="@+id/ux_fragment" 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="top"/>
@@ -25,24 +24,36 @@
             android:layout_alignParentTop="true"
             android:text="@string/back_button_text"
             android:textAllCaps="false" />
-
         <TextView
             android:id="@+id/statusText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/scanProgressText"
             android:layout_centerHorizontal="true"
             android:text=""
             android:textColor="@android:color/holo_purple" />
-
-        <TextView
-            android:id="@+id/scanProgressText"
+        <EditText
+            android:id="@+id/anchorNumText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/actionButton"
-            android:layout_centerHorizontal="true"
+            android:layout_marginStart="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom = "100dp"
+            android:ems="10"
+            android:inputType="number"
             android:text=""
-            android:layout_marginTop="10dp"
-            android:textColor="@android:color/holo_purple" />
+            android:hint="@string/shared_anchor_number_text"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textColor="@android:color/holo_orange_dark"/>
+        <Button
+            android:id="@+id/locateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:textAllCaps="false"
+            android:text="Locate" />
     </RelativeLayout>
-</merge>
+
+</RelativeLayout>

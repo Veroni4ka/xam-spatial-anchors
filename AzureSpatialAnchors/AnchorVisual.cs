@@ -25,12 +25,15 @@ namespace AzureSpatialAnchors
 
         public Anchor LocalAnchor => this.AnchorNode.Anchor;
 
-        public void Render(ArFragment arFragment, Material color)
+        public void Render(ArFragment arFragment)
         {
             MainThread.BeginInvokeOnMainThread(() =>
             {
+                ModelRenderable.Builder builder = new ModelRenderable.Builder();
                 this.nodeRenderable = ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
-                //ModelRenderable.InvokeBuilder().SetSource(arFragment.Context, Android.Net.Uri.Parse("file:///android_asset/pinkCat.fbx")).Build();
+                //builder.SetSource(arFragment.Context, Android.Net.Uri.Parse("file:///android_asset/pinkCat.fbx")).Build(); 
+                //ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
+                
                 this.AnchorNode.Renderable = this.nodeRenderable;
                 this.AnchorNode.SetParent(arFragment.ArSceneView.Scene);
 

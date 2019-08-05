@@ -3271,8 +3271,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c0069
 			public const int @__arcore_messageText = 2131492969;
 			
-			// aapt resource value: 0x7f0c00b0
-			public const int actionButton = 2131493040;
+			// aapt resource value: 0x7f0c00ae
+			public const int actionButton = 2131493038;
 			
 			// aapt resource value: 0x7f0c0090
 			public const int action_bar = 2131493008;
@@ -3343,8 +3343,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c003f
 			public const int always = 2131492927;
 			
-			// aapt resource value: 0x7f0c00ac
-			public const int anchorNumText = 2131493036;
+			// aapt resource value: 0x7f0c00bb
+			public const int anchorNumText = 2131493051;
 			
 			// aapt resource value: 0x7f0c00a2
 			public const int arCreateShared = 2131493026;
@@ -3358,8 +3358,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c004d
 			public const int auto = 2131492941;
 			
-			// aapt resource value: 0x7f0c00ad
-			public const int backButton = 2131493037;
+			// aapt resource value: 0x7f0c00ab
+			public const int backButton = 2131493035;
 			
 			// aapt resource value: 0x7f0c0036
 			public const int beginning = 2131492918;
@@ -3412,8 +3412,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c0040
 			public const int collapseActionView = 2131492928;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int container = 2131493043;
+			// aapt resource value: 0x7f0c00b1
+			public const int container = 2131493041;
 			
 			// aapt resource value: 0x7f0c0085
 			public const int content = 2131492997;
@@ -3421,8 +3421,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c0078
 			public const int contentPanel = 2131492984;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int coordinator = 2131493044;
+			// aapt resource value: 0x7f0c00b2
+			public const int coordinator = 2131493042;
 			
 			// aapt resource value: 0x7f0c007f
 			public const int custom = 2131492991;
@@ -3436,20 +3436,20 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c0072
 			public const int default_activity_button = 2131492978;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int design_bottom_sheet = 2131493046;
-			
-			// aapt resource value: 0x7f0c00bb
-			public const int design_menu_item_action_area = 2131493051;
-			
-			// aapt resource value: 0x7f0c00ba
-			public const int design_menu_item_action_area_stub = 2131493050;
+			// aapt resource value: 0x7f0c00b4
+			public const int design_bottom_sheet = 2131493044;
 			
 			// aapt resource value: 0x7f0c00b9
-			public const int design_menu_item_text = 2131493049;
+			public const int design_menu_item_action_area = 2131493049;
 			
 			// aapt resource value: 0x7f0c00b8
-			public const int design_navigation_view = 2131493048;
+			public const int design_menu_item_action_area_stub = 2131493048;
+			
+			// aapt resource value: 0x7f0c00b7
+			public const int design_menu_item_text = 2131493047;
+			
+			// aapt resource value: 0x7f0c00b6
+			public const int design_navigation_view = 2131493046;
 			
 			// aapt resource value: 0x7f0c0027
 			public const int disableHome = 2131492903;
@@ -3529,8 +3529,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c004e
 			public const int labeled = 2131492942;
 			
-			// aapt resource value: 0x7f0c00b2
-			public const int largeLabel = 2131493042;
+			// aapt resource value: 0x7f0c00b0
+			public const int largeLabel = 2131493040;
 			
 			// aapt resource value: 0x7f0c0054
 			public const int left = 2131492948;
@@ -3549,6 +3549,9 @@ namespace AzureSpatialAnchors
 			
 			// aapt resource value: 0x7f0c0073
 			public const int list_item = 2131492979;
+			
+			// aapt resource value: 0x7f0c00bc
+			public const int locateButton = 2131493052;
 			
 			// aapt resource value: 0x7f0c00cf
 			public const int masked = 2131493071;
@@ -3571,8 +3574,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c002f
 			public const int multiply = 2131492911;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int navigation_header_container = 2131493047;
+			// aapt resource value: 0x7f0c00b5
+			public const int navigation_header_container = 2131493045;
 			
 			// aapt resource value: 0x7f0c0042
 			public const int never = 2131492930;
@@ -3634,8 +3637,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c000e
 			public const int save_scale_type = 2131492878;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int scanProgressText = 2131493039;
+			// aapt resource value: 0x7f0c00ad
+			public const int scanProgressText = 2131493037;
 			
 			// aapt resource value: 0x7f0c00cd
 			public const int sceneform_ar_scene_view = 2131493069;
@@ -3712,8 +3715,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c002c
 			public const int showTitle = 2131492908;
 			
-			// aapt resource value: 0x7f0c00b1
-			public const int smallLabel = 2131493041;
+			// aapt resource value: 0x7f0c00af
+			public const int smallLabel = 2131493039;
 			
 			// aapt resource value: 0x7f0c0016
 			public const int snackbar_action = 2131492886;
@@ -3745,8 +3748,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c0056
 			public const int start = 2131492950;
 			
-			// aapt resource value: 0x7f0c00ae
-			public const int statusText = 2131493038;
+			// aapt resource value: 0x7f0c00ac
+			public const int statusText = 2131493036;
 			
 			// aapt resource value: 0x7f0c005b
 			public const int stretch = 2131492955;
@@ -3784,14 +3787,11 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c005a
 			public const int textStart = 2131492954;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int textView = 2131493035;
-			
 			// aapt resource value: 0x7f0c00a4
 			public const int textView5 = 2131493028;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int text_input_password_toggle = 2131493052;
+			// aapt resource value: 0x7f0c00ba
+			public const int text_input_password_toggle = 2131493050;
 			
 			// aapt resource value: 0x7f0c0018
 			public const int textinput_counter = 2131492888;
@@ -3823,8 +3823,8 @@ namespace AzureSpatialAnchors
 			// aapt resource value: 0x7f0c0080
 			public const int topPanel = 2131492992;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int touch_outside = 2131493045;
+			// aapt resource value: 0x7f0c00b3
+			public const int touch_outside = 2131493043;
 			
 			// aapt resource value: 0x7f0c000f
 			public const int transition_current_scene = 2131492879;
@@ -4061,52 +4061,52 @@ namespace AzureSpatialAnchors
 			public const int browser_actions_context_menu_row = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int content_anchors = 2130968608;
+			public const int create_anchors = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int create_anchors = 2130968609;
+			public const int design_bottom_navigation_item = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_bottom_navigation_item = 2130968610;
+			public const int design_bottom_sheet_dialog = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_bottom_sheet_dialog = 2130968611;
+			public const int design_layout_snackbar = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_layout_snackbar = 2130968612;
+			public const int design_layout_snackbar_include = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_layout_snackbar_include = 2130968613;
+			public const int design_layout_tab_icon = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_layout_tab_icon = 2130968614;
+			public const int design_layout_tab_text = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_layout_tab_text = 2130968615;
+			public const int design_menu_item_action_area = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_menu_item_action_area = 2130968616;
+			public const int design_navigation_item = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int design_navigation_item = 2130968617;
+			public const int design_navigation_item_header = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int design_navigation_item_header = 2130968618;
+			public const int design_navigation_item_separator = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int design_navigation_item_separator = 2130968619;
+			public const int design_navigation_item_subheader = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int design_navigation_item_subheader = 2130968620;
+			public const int design_navigation_menu = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int design_navigation_menu = 2130968621;
+			public const int design_navigation_menu_item = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int design_navigation_menu_item = 2130968622;
+			public const int design_text_input_password_icon = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int design_text_input_password_icon = 2130968623;
+			public const int locate_anchors = 2130968623;
 			
 			// aapt resource value: 0x7f040030
 			public const int mtrl_layout_snackbar = 2130968624;
