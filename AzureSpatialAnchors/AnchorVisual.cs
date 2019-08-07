@@ -22,7 +22,6 @@ namespace AzureSpatialAnchors
         public AnchorNode AnchorNode { get; }
 
         public CloudSpatialAnchor CloudAnchor { get; set; }
-
         public Anchor LocalAnchor => this.AnchorNode.Anchor;
 
         public void Render(ArFragment arFragment)
@@ -30,8 +29,11 @@ namespace AzureSpatialAnchors
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 ModelRenderable.Builder builder = new ModelRenderable.Builder();
-                this.nodeRenderable = ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
-                //builder.SetSource(arFragment.Context, Android.Net.Uri.Parse("file:///android_asset/pinkCat.fbx")).Build(); 
+                builder.SetSource(arFragment.Context, Resource.Raw.andy).Build(((renderable) =>
+                {
+                    this.nodeRenderable = renderable;
+
+                })); 
                 //ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
                 
                 this.AnchorNode.Renderable = this.nodeRenderable;
@@ -56,7 +58,13 @@ namespace AzureSpatialAnchors
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 this.AnchorNode.Renderable = null;
-                this.nodeRenderable = ShapeFactory.MakeSphere(0.1f, new Vector3(0.0f, 0.15f, 0.0f), this.color);
+                ModelRenderable.Builder builder = new ModelRenderable.Builder();
+                //builder.SetSource(Resource.Raw.pinkCat).Build(((renderable) =>
+                //{
+                //    this.nodeRenderable = renderable;
+
+                //}));
+                //ShapeFactory.MakeSphere(0.1f, new Vector3(0.0f, 0.15f, 0.0f), this.color);
                 this.AnchorNode.Renderable = this.nodeRenderable;
             });
         }

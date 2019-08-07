@@ -248,14 +248,14 @@ namespace AzureSpatialAnchors
                 LocalAnchor = visual.LocalAnchor
             };
             cloudAnchor.AppProperties.Add("Label", "Congrats! You found a spatial anchor");
-            visual.CloudAnchor = cloudAnchor;
-
             Date now = new Date();
             Calendar cal = Calendar.Instance;
             cal.Time = now;
             cal.Add(CalendarField.Date, 7);
             Date oneWeekFromNow = cal.Time;
             cloudAnchor.Expiration = oneWeekFromNow;
+            visual.CloudAnchor = cloudAnchor;
+            
         }
 
         private void OnExitDemoClicked(object sender, EventArgs e)
