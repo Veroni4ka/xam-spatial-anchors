@@ -58,7 +58,7 @@ namespace AzureSpatialAnchors
 
             this.cloudAnchorManager.OnSessionUpdated += (_, sessionUpdateArgs) =>
             {
-                float progress = sessionUpdateArgs.P0.Status.RecommendedForCreateProgress;
+                float progress = sessionUpdateArgs.Args.Status.RecommendedForCreateProgress;
                 this.enoughDataForSaving = progress >= 1.0;
                 lock (this.progressLock)
                 {

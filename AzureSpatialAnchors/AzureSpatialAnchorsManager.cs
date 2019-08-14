@@ -159,12 +159,12 @@ namespace AzureSpatialAnchors
 
         private void SpatialAnchorsSession_Error(object sender, SessionErrorEventArgs e)
         {
-            if (e == null || e.P0 == null)
+            if (e == null || e.Args == null)
             {
                 return;
             }
 
-            string message = $"{e.P0.ErrorCode}: {e.P0.ErrorMessage}";
+            string message = $"{e.Args.ErrorCode}: {e.Args.ErrorMessage}";
             System.Diagnostics.Debug.WriteLine(message);
 
             this.OnSessionError?.Invoke(sender, e);
@@ -177,7 +177,7 @@ namespace AzureSpatialAnchors
 
         private void SpatialAnchorsSession_SessionUpdated(object sender, SessionUpdatedEventArgs e)
         {
-            float createScanProgress = Math.Min(e.P0.Status.RecommendedForCreateProgress, 1);
+            float createScanProgress = Math.Min(e.Args.Status.RecommendedForCreateProgress, 1);
 
             System.Diagnostics.Debug.WriteLine($"Create scan progress: {createScanProgress:0%}");
 
@@ -188,12 +188,12 @@ namespace AzureSpatialAnchors
 
         private void SpatialCloudSession_LogDebug(object sender, LogDebugEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(e.P0.Message))
+            if (string.IsNullOrWhiteSpace(e.Args.Message))
             {
                 return;
             }
 
-            System.Diagnostics.Debug.WriteLine(e.P0.Message);
+            System.Diagnostics.Debug.WriteLine(e.Args.Message);
 
             this.OnLogDebug?.Invoke(sender, e);
         }

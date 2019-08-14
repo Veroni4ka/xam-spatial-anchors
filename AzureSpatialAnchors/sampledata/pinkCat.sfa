@@ -1,0 +1,75 @@
+{
+  animations: [
+    {
+      path: 'sampledata/pinkCat.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Material_58',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: '314',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Color',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/pinkCat.fbx',
+    name: 'pinkCat',
+    recenter: 'root',
+    scale: 16.724537000000002,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\pinkCat.fbm\\314.png',
+      name: '314',
+      pipeline_name: 'pinkCat.fbm\\314.png',
+    },
+    {
+      file: 'sampledata\\pinkCat.fbm\\318.png',
+      name: '318',
+      pipeline_name: 'pinkCat.fbm\\318.png',
+    },
+  ],
+  version: '0.54:2',
+}

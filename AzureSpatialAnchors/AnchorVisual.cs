@@ -28,14 +28,14 @@ namespace AzureSpatialAnchors
         {
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                ModelRenderable.Builder builder = new ModelRenderable.Builder();
-                builder.SetSource(arFragment.Context, Resource.Raw.andy).Build(((renderable) =>
-                {
-                    this.nodeRenderable = renderable;
+                this.nodeRenderable = ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
+                //ModelRenderable.Builder builder = new ModelRenderable.Builder();
+                //builder.SetSource(arFragment.Context, Resource.Raw.pinkCat).Build(((renderable) =>
+                //{
+                //    this.nodeRenderable = renderable;
 
-                })); 
-                //ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
-                
+                //})); 
+
                 this.AnchorNode.Renderable = this.nodeRenderable;
                 this.AnchorNode.SetParent(arFragment.ArSceneView.Scene);
 

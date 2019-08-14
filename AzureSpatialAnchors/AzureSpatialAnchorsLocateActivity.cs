@@ -151,8 +151,8 @@ namespace AzureSpatialAnchors
             this.cloudAnchorManager.OnAnchorLocated += (sender, args) =>
                 this.RunOnUiThread(() =>
                 {
-                    CloudSpatialAnchor anchor = args.P0.Anchor;
-                    LocateAnchorStatus status = args.P0.Status;
+                    CloudSpatialAnchor anchor = args.Args.Anchor;
+                    LocateAnchorStatus status = args.Args.Status;
 
                     if (status == LocateAnchorStatus.AlreadyTracked || status == LocateAnchorStatus.Located)
                     {
