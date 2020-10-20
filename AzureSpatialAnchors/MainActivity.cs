@@ -2,19 +2,8 @@
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Support.Design.Widget;
 using Android.Support.V7.App;
-using Android.Views;
 using Android.Widget;
-using Google.AR.Core;
-using Google.AR.Sceneform;
-using Google.AR.Sceneform.Math;
-using Google.AR.Sceneform.Rendering;
-using Google.AR.Sceneform.UX;
-using Java.Util.Concurrent;
-using Microsoft.Azure.SpatialAnchors;
-using Xamarin.Essentials;
 
 namespace AzureSpatialAnchors
 {

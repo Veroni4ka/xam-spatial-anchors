@@ -100,7 +100,6 @@ namespace AzureSpatialAnchors
 
             try
             {
-                // TODO: result is always null...
                 Java.Lang.Object result = await this.spatialAnchorsSession.CreateAnchorAsync(newCloudAnchor).GetAsync();
             }
             catch (Exception ex)

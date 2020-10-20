@@ -1,4 +1,5 @@
 ﻿using System;
+using Android.Content;
 using Google.AR.Core;
 using Google.AR.Sceneform;
 using Google.AR.Sceneform.Math;
@@ -28,13 +29,18 @@ namespace AzureSpatialAnchors
         {
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                this.nodeRenderable = ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
-                //ModelRenderable.Builder builder = new ModelRenderable.Builder();
-                //builder.SetSource(arFragment.Context, Resource.Raw.pinkCat).Build(((renderable) =>
-                //{
-                //    this.nodeRenderable = renderable;
+                /* string GLTF_ASSET =
+                         "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf";
+                
+                ModelRenderable.InvokeBuilder()
+                    .SetSource(arFragment.Context, Android.Net.Uri.Parse(GLTF_ASSET))
+                    .Build(((renderable) =>
+                    {
+                        this.nodeRenderable = renderable;
 
-                //})); 
+                    }));*/
+
+                this.nodeRenderable = ShapeFactory.MakeSphere(0.08f, new Vector3(0.0f, 0.15f, 0.0f), color);
 
                 this.AnchorNode.Renderable = this.nodeRenderable;
                 this.AnchorNode.SetParent(arFragment.ArSceneView.Scene);
